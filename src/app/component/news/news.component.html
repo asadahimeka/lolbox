@@ -1,0 +1,31 @@
+<div class="news">
+  <div class="swi" *ngIf="iloading">
+    <img src="../../../assets/img/u46.png" alt="">
+  </div>
+  <div class="swi">
+    <ks-swiper-container [options]="swipeOptions">
+      <ks-swiper-slide *ngFor="let item of bannerList">
+        <a [routerLink]="['/detail/news',{u:item.article_url,t:item.title}]">
+          <img data-src="{{item.image_url_big}}" class="swiper-lazy" (load)="iloading=false" #simg (error)="simg.src='assets/img/u46.png'">
+        </a>
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      </ks-swiper-slide>
+    </ks-swiper-container>
+  </div>
+  <div class="news-item" *ngFor="let news of newsList">
+    <div class="l-img">
+      <img src="{{news.image_url_small}}" alt="" #nimg (error)="nimg.src='assets/img/u54.png'">
+    </div>
+    <a [routerLink]="['/detail/news',{u:news.article_url,t:news.title}]" class="art">
+      <div class="r-cont">
+        <p class="news-tit">{{news.title}}</p>
+        <p class="new-intro">{{news.summary}}</p>
+        <p class="timesee">
+          <span class="time">{{news.publication_date.substr(0,10)}}</span>
+          <span class="see">{{dealPv(news.pv)}}阅</span>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="bottom-space">-END-</div>
+</div>

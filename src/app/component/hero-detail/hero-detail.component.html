@@ -1,0 +1,52 @@
+<div class="hero-detail">
+  <div class="hero-bnr">
+    <img src="../../../assets/img/u46.png" alt="" #himg (error)="himg.src='assets/img/u54.png'">
+    <div class="hero-info">
+      <span class="hero-name">黑暗之女</span>
+      <span class="hero-type">法师</span>
+      <span class="hero-prop">攻：2 法：10 防：3 操作：4</span>
+    </div>
+  </div>
+  <div class="tab-menu">
+    <div class="tab" [class.tab-act]="iTabAct==0" (click)="actTab(0)">技能说明</div>
+    <div class="tab" [class.tab-act]="iTabAct==1" (click)="actTab(1)">皮肤欣赏</div>
+    <div class="tab-bor" [class.tab-bor-2]="iTabAct==1"></div>
+  </div>
+
+  <div *ngIf="iTabAct==0" class="skill" [@routeAnimation]>
+    <div class="skill-intro-tit">
+      <i class="iconfont">&#xe61e;</i>技能介绍
+    </div>
+    <div class="skill-intro">
+      <div class="skill-item" *ngFor="let item of [0,0,0]">
+        <div class="skill-img">
+          <img src="../../../assets/img/u54.png" alt="" #skimg (error)="skimg.src='assets/img/u54.png'">
+        </div>
+        <div class="skill-cont">
+          <p class="skill-name">嗜火（被动）</p>
+          <div class="skill-detail">
+            <p class="skill-info">
+              你才是呢测试数据长江索道能
+            </p>
+            <p class="skill-cd">冷却时间：4/4/4/4秒</p>
+            <p class="skill-cost">消耗：60/65/70/75/80法力</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skill-intro-tit">
+      <i class="iconfont">&#xe61e;</i>技能加点推荐
+    </div>
+    <div class="skill-pt-rec">
+      <p>辅助：WWWWWWWWWWWWWWWW</p>
+      <p>中单：WWWWWWWWWWWWWWWW</p>
+    </div>
+  </div>
+
+  <div *ngIf="iTabAct==1" class="skin">
+    <div class="tit"><span class="logo">L</span>点击皮肤可以观看介绍视频哦</div>
+    <img src="../../../assets/img/u46.png" alt="">
+    <p class="skin-name">哥特萝莉 安妮</p>
+  </div>
+
+</div>

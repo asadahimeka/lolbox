@@ -1,0 +1,27 @@
+<div class="search">
+  <div class="inp">
+    <input type="text" placeholder="搜索召唤师" [(ngModel)]="keyword" (keyup.enter)="searchNow(keyword)">
+    <i class="iconfont" (click)="searchNow(keyword)">&#xe69c;&nbsp;搜索</i>
+  </div>
+  <div class="srh-res">
+    <div class="no-cont" *ngIf="!players.length">
+      <img src="../../../assets/img/noContent.jpg" alt="">
+      <p>暂时木有内容呀~</p>
+    </div>
+    <div class="playerlist">
+      <div class="player-item" *ngFor="let item of players" [routerLink]="['/detail/player',item.area_id,item.qquin]">
+        <div class="p-img">
+          <img src="{{dealSrc(item.icon_id)}}" alt="" #pimg (error)="pimg.src='assets/img/u54.png'">
+        </div>
+        <div class="p-info">
+          <p class="name">{{item.name}}</p>
+          <p class="type">
+            <span class="p-type">影流</span>
+            <span class="lv">等级{{item.level}}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-space" *ngIf="players.length">-END-</div>
+  </div>
+</div>

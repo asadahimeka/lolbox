@@ -1,0 +1,66 @@
+<div class="bat-info" *ngFor="let battle of battles">
+  <span class="start">开始时间: {{battle.start_time.substr(11,5)}}</span>
+  <span class="time">总时长: {{(battle.duration/60).toFixed()}}分钟</span>
+  <span class="type">模式: 匹配赛 </span>
+</div>
+<div class="bat-res">
+  <span class="win">获胜方</span>
+  <span>
+    <i class="iconfont">&#xe600;</i>
+    <i class="iconfont">&#xe688;</i>
+    <i class="iconfont">&#xe609;</i>
+  </span>
+</div>
+<div class="bat">
+  <div class="bat-item" *ngFor="let w of win">
+    <div class="bat-img">
+      <img src="http://cdn.tgp.qq.com/pallas/images/champions_id/{{w.champion_id}}.png" alt="">
+      <div class="lv">LV{{w.level}}</div>
+    </div>
+    <div class="cont">
+      <div>
+        <p>{{w.name}}</p>
+        <div class="sk-img">
+          <img src="{{dealItemImg(w.item0)}}" alt="">
+          <img src="{{dealItemImg(w.item1)}}" alt="">
+          <img src="{{dealItemImg(w.item2)}}" alt="">
+          <img src="{{dealItemImg(w.item3)}}" alt="">
+          <img src="{{dealItemImg(w.item4)}}" alt="">
+          <img src="{{dealItemImg(w.item5)}}" alt="">
+        </div>
+      </div>
+      <div class="point">{{w.champions_killed}}/{{w.num_deaths}}/{{w.assists}}</div>
+    </div>
+  </div>
+</div>
+<div class="bat-res">
+  <span class="win">失败方</span>
+  <span>
+    <i class="iconfont">&#xe600;</i>
+    <i class="iconfont">&#xe688;</i>
+    <i class="iconfont">&#xe609;</i>
+  </span>
+</div>
+<div class="bat">
+    <div class="bat-item" *ngFor="let f of fail">
+      <div class="bat-img">
+        <img src="http://cdn.tgp.qq.com/pallas/images/champions_id/{{f.champion_id}}.png" alt="">
+        <div class="lv">LV{{f.level}}</div>
+      </div>
+      <div class="cont">
+        <div>
+          <p>{{f.name}}</p>
+          <div class="sk-img">
+            <img src="{{dealItemImg(f.item0)}}" alt="">
+            <img src="{{dealItemImg(f.item1)}}" alt="">
+            <img src="{{dealItemImg(f.item2)}}" alt="">
+            <img src="{{dealItemImg(f.item3)}}" alt="">
+            <img src="{{dealItemImg(f.item4)}}" alt="">
+            <img src="{{dealItemImg(f.item5)}}" alt="">
+          </div>
+        </div>
+        <div class="point">{{f.champions_killed}}/{{f.num_deaths}}/{{f.assists}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-space"></div>

@@ -1,0 +1,5 @@
+<div class="header" [class.dtlp]="router.url.indexOf('detail/player')>-1">
+  <i class="iconfont" (click)="goBack()">&#xe697;</i>
+  <p>{{navTitle||hs.getNavTitle()}}</p>  
+</div>
+<div class="head-space"></div>

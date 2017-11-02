@@ -1,0 +1,55 @@
+<div class="player">
+  <div class="player-bg" *ngFor="let user of users">
+    <div class="player-img">
+      <img src="http://static.lolbox.duowan.com/images/profile_icons/{{user.icon}}.jpg" alt="">
+    </div>
+    <p class="lv">Lv.{{user.level}}</p>
+    <p>
+      <span class="region">{{area}}</span>
+      <span class="rank">{{tq}}</span>
+    </p>
+    <p>
+      <span class="sword">战斗力：{{user.power_value}}</span>
+      <span class="like">赞：{{user.praise_num}}</span>
+    </p>
+  </div>
+  <div class="place"></div>
+  <div class="kill-times" *ngFor="let kill of kills">
+    <div class="kill">
+      <i class="iconfont">&#xe604;</i>
+      <p class="kill-type">三杀: {{kill.triple_kills}}</p>
+    </div>
+    <div class="kill">
+      <i class="iconfont">&#xe605;</i>
+      <p class="kill-type">四杀: {{kill.quadra_kills}}</p>
+    </div>
+    <div class="kill">
+      <i class="iconfont">&#xe603;</i>
+      <p class="kill-type">五杀: {{kill.penta_kills}}</p>
+    </div>
+    <div class="kill">
+      <i class="iconfont">&#xe646;</i>
+      <p class="kill-type">总击杀: {{kill.kills_total}}</p>
+    </div>
+    <div class="kill">
+      <i class="iconfont">&#xe691;</i>
+      <p class="kill-type">MVP: {{mvp}}</p>
+    </div>
+    <div class="kill">
+      <i class="iconfont">&#xe602;</i>
+      <p class="kill-type">超神: {{kill.god_like_num}}</p>
+    </div>
+  </div>
+  <div class="battle-recs">
+    <div class="rec-item" *ngFor="let item of battles">
+      <div class="user-img">
+        <img src='http://cdn.tgp.qq.com/pallas/images/champions_id/{{item.champion_id}}.png' alt="">
+      </div>
+      <div class="rec-info" [routerLink]="['/detail/battle']">
+        <p class="rec-res">{{dealWin(item.flag)}}</p>
+        <p class="battle-type">排位赛</p>
+        <i class="iconfont">&#xe6a7;</i>
+      </div>
+    </div>
+  </div>
+</div>

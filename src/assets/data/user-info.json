@@ -1,0 +1,19 @@
+{
+    "data": [{
+        "area_id": 2,
+        "qquin": "U7113586655657468354",
+        "name": "简国宇",
+        "icon": 1422,
+        "power_value": 10189,
+        "level": 30,
+        "tier": 5,
+        "queue": 4,
+        "win_point": 5,
+        "rank_last_battle": 234597,
+        "fellow_num": 1,
+        "fans_num": 0,
+        "praise_num": 661
+    }],
+    "code": 0,
+    "msg": "ok"
+}

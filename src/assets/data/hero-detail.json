@@ -1,0 +1,194 @@
+{
+    "data": [
+      {
+        "id": "Annie",
+        "image": {
+          "full": "Annie.png",
+          "group": "champion",
+          "h": 48,
+          "sprite": "champion0.png",
+          "w": 48,
+          "x": 288,
+          "y": 0
+        },
+        "info": {
+          "attack": 2,
+          "defense": 3,
+          "difficulty": 4,
+          "magic": 10
+        },
+        "key": "1",
+        "name": "黑暗之女",
+        "passive": {
+          "description": "每施放4个技能后，下一次伤害类技能就会对目标造成晕眩效果，持续1.25/1.5/1.75(当等级1/6/11时变化)秒。",
+          "image": {
+            "full": "Annie_Passive.png"
+          },
+          "name": "嗜火（被动）"
+        },
+        "skins": [
+          {
+            "displayUrl": "http://v.qq.com/boke/page/j/0/t/j01100rhfet.html",
+            "id": "000",
+            "name": "默认皮肤",
+            "num": 0,
+            "source": "http://static.video.qq.com/TPout.swf?vid=j01100rhfet&auto=1"
+          },
+          {
+            "displayUrl": "http://v.qq.com/boke/page/s/0/f/s0192iumntf.html",
+            "id": "001",
+            "name": "哥特萝莉 安妮",
+            "num": 1,
+            "source": "http://static.video.qq.com/TPout.swf?vid=s0192iumntf&auto=0"
+          },
+          {
+            "displayUrl": "http://v.qq.com/boke/page/q/0/D/q0010WfgbID.html",
+            "id": "002",
+            "name": "小红帽 安妮",
+            "num": 2,
+            "source": "http://static.video.qq.com/TPout.swf?vid=q0010WfgbID&auto=1"
+          },
+          {
+            "displayUrl": "http://v.qq.com/boke/page/t/0/3/t0112aqqet3.html",
+            "id": "003",
+            "name": "安妮梦游仙境",
+            "num": 3,
+            "source": "http://static.video.qq.com/TPout.swf?vid=t0112aqqet3&auto=1"
+          },
+          {
+            "displayUrl": "http://v.qq.com/boke/page/g/0/p/g0112yzftsp.html",
+            "id": "004",
+            "name": "舞会公主 安妮",
+            "num": 4,
+            "source": "http://static.video.qq.com/TPout.swf?vid=g0112yzftsp&auto=1"
+          },
+          {
+            "displayUrl": "http://v.qq.com/boke/page/S/0/w/S0010843Rgw.html",
+            "id": "005",
+            "name": "冰霜烈焰 安妮",
+            "num": 5,
+            "source": "http://static.video.qq.com/TPout.swf?vid=S0010843Rgw&auto=1"
+          },
+          {
+            "displayUrl": "http://v.qq.com/boke/page/n/0/a/n0112shcwva.html",
+            "id": "006",
+            "name": "安伯斯与提妮",
+            "num": 6,
+            "source": "http://static.video.qq.com/TPout.swf?vid=n0112shcwva&auto=1"
+          },
+          {
+            "displayUrl": "http://v.qq.com/boke/page/D/0/x/D0010NFChzx.html",
+            "id": "007",
+            "name": "科学怪熊的新娘 安妮",
+            "num": 7,
+            "source": "http://static.video.qq.com/TPout.swf?vid=D0010NFChzx&auto=1"
+          },
+          {
+            "displayUrl": "http://v.qq.com/page/h/0/d/h0011kdr9nd.html",
+            "id": "008",
+            "name": "“你看见过我的熊猫吗？”安妮",
+            "num": 8,
+            "source": "http://static.video.qq.com/TPout.swf?vid=h0011kdr9nd&auto=0"
+          },
+          {
+            "displayUrl": "http://v.qq.com/cover/9/96pvuc7rtid027u.html?vid=o014520ur5l",
+            "id": "009",
+            "name": "甜心宝贝 安妮",
+            "num": 9,
+            "source": "http://static.video.qq.com/TPout.swf?vid=o014520ur5l&auto=0"
+          },
+          {
+            "displayUrl": "http://v.qq.com/page/b/v/b/b0185vjhevb.html",
+            "id": "010",
+            "name": "海克斯科技 安妮",
+            "num": 10,
+            "source": "http://static.video.qq.com/TPout.swf?vid=b0185vjhevb&auto=0"
+          }
+        ],
+        "spells": [
+          {
+            "description": "",
+            "id": "Disintegrate",
+            "image": {
+              "full": "Disintegrate.png"
+            },
+            "leveltip": {
+              "effect": [],
+              "label": []
+            },
+            "name": "碎裂之火（Q）",
+            "resource": "",
+            "tooltip": "造成80/115/150/185/220(+0.8*AP)魔法伤害。如果目标死于碎裂之火，则返还法力值并且冷却时间减半。<br>距离：575<br>冷却时间：4/4/4/4/4秒<br>消耗：60/65/70/75/80 法力"
+          },
+          {
+            "description": "",
+            "id": "Incinerate",
+            "image": {
+              "full": "Incinerate.png"
+            },
+            "leveltip": {
+              "effect": [],
+              "label": []
+            },
+            "name": "焚烧（W）",
+            "resource": "",
+            "tooltip": "向锥形区域施放一道烈焰，对区域内的所有敌人造成70/115/160/205/250(+0.85*AP)魔法伤害。<br>距离：625<br>冷却时间：8/8/8/8/8秒<br>消耗：70/80/90/100/110 法力"
+          },
+          {
+            "description": "",
+            "id": "MoltenShield",
+            "image": {
+              "full": "MoltenShield.png"
+            },
+            "leveltip": {
+              "effect": [],
+              "label": []
+            },
+            "name": "熔岩护盾（E）",
+            "resource": "",
+            "tooltip": "护盾持续时长内给予16/22/28/34/40%伤害减免，持续3/3/3/3/3秒。对安妮进行普通攻击的敌人会受到20/30/40/50/60(+0.2*AP)点魔法伤害。<br>冷却时间：10/10/10/10/10秒<br>消耗：20/20/20/20/20 法力"
+          },
+          {
+            "description": "",
+            "id": "InfernalGuardian",
+            "image": {
+              "full": "InfernalGuardian.png"
+            },
+            "leveltip": {
+              "effect": [],
+              "label": []
+            },
+            "name": "提伯斯之怒（R）",
+            "resource": "",
+            "tooltip": "提伯斯出现在一道怒焰之中，对目标区域内的敌人造成150/275/400(+0.65*AP)魔法伤害。<br>在接下来的45/45/45秒里，提伯斯会追赶敌人，每秒对身边的敌人造成10/15/20(+0.2*AP)魔法伤害。<br>当提伯斯位于场上时，如果安妮施放了【熔岩护盾】，那么提伯斯也会获得护盾和+300额外的移动速度，这个效果在0.75秒里持续衰减衰减。<br>  提伯斯生命值：1200/2100/3000。<br>提伯斯护甲和魔法抗性：30/50/70。<br>提伯斯攻击力：50/75/100。<br>安妮可以通过选定自己来命令提伯斯跟随她<br>新增：在脱离战斗至少5秒后，提伯斯在朝安妮移动时获得移速加成，并且每秒回复6%最大生命值<br>提伯斯在被召唤时处于暴怒状态，无视单位碰撞体积，并且获得275%攻击速度和100%移动速度加成(在3秒内不断衰减)<br>对敌方英雄施加【嗜火】特效也会导致提伯斯进入暴怒状态<br>如果在提伯斯被召唤后安妮死去，提伯斯立即回复50%已损失的生命值，获得暴怒，并且会锁定击杀安妮的凶手。如果击杀安妮的凶手距离太远，提伯斯将会锁定生命值最低的敌方英雄。<br>冷却时间：120/100/80秒<br>消耗：100/100/100 法力"
+          }
+        ],
+        "tags": [
+          "Mage"
+        ],
+        "title": "安妮",
+        "trait": {
+          "fz": {
+            "add-point": "WQWEWRWQWQRQQEEREE",
+            "eq-recommond": [
+              "2043;2003;3301;3341",
+              "3069;2045;1011;3117",
+              "3069;2045;3116;3117;3089;3135",
+              "3069;2045;3116;3117;3190;3102"
+            ]
+          },
+          "zd": {
+            "add-point": "WQWEWRWQWQRQQEEREE",
+            "eq-recommond": [
+              "1056;2003:2;3340",
+              "3001;3020;3128;3089",
+              "3001;3020;3128;3089;3135;3157",
+              "3001;3020;3136;3089;3135;3157"
+            ]
+          }
+        }
+      }
+    ],
+    "code": 0,
+    "msg": "ok"
+  }  

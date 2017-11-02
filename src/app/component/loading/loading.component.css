@@ -1,0 +1,15 @@
+#loading {
+    background: 0;
+}
+
+#loading p{
+    color: #000;
+}
+
+#loading-center-absolute {
+    top: 35%;
+}
+
+.object {
+    background: #000000;
+}

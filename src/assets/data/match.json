@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "game_id": 1759823959,
+            "battle_time": "2016-05-31 21:13:03",
+            "battle_map": 11,
+            "game_type": 3,
+            "game_mode": 1,
+            "champion_id": 104,
+            "win": 1,
+            "flag": 0,
+            "ext_flag": 256
+        },
+        {
+            "game_id": 1759741120,
+            "battle_time": "2016-05-31 20:44:28",
+            "battle_map": 11,
+            "game_type": 3,
+            "game_mode": 1,
+            "champion_id": 157,
+            "win": 1,
+            "flag": 0,
+            "ext_flag": 256
+        }
+    ]
+}

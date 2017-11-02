@@ -1,0 +1,15 @@
+<div class="videolist">
+  <div class="video-item" *ngFor="let item of videoList">
+    <div class="v-img">
+      <a [routerLink]="['/detail/video']" [queryParams]="{url:item.url,title:item.title,date:item.createdate}">
+        <img src="{{item.img}}" alt="" #vimg (error)="vimg.src='assets/img/u54.png'">
+      </a>
+    </div>
+    <p class="v-tit">{{item.title}}</p>
+    <p class="time-com">
+      <span class="time">&nbsp;{{item.createdate.substr(0,10)}}</span>
+      <span class="comment">{{item.comments}}评论&nbsp;</span>
+    </p>
+  </div>
+  <div class="bottom-space">-END-</div>
+</div>

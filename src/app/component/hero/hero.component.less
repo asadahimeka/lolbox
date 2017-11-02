@@ -1,0 +1,38 @@
+.heros {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .3rem .2rem 0 .3rem;
+    .hero {
+        display: flex;
+        width: 3.5rem;
+        margin-bottom: .3rem;
+        .h-img{
+            width: 1.15rem;
+            height: 1.15rem;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .h-cont{
+            width: 2rem;
+            margin-left: .2rem;
+            line-height: 1.5;
+            color: #000;
+            p{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .h-title{
+                font-size: .3rem;
+                font-weight: 600;
+            }
+            .h-name{
+                font-size: .28rem;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<Loading *ngIf="!isOver">Loading...</Loading>
+<div class="heros">
+  <div class="hero" *ngFor="let item of heroList" [routerLink]="['/detail/hero']">
+    <div class="h-img">
+      <img src="{{dealSrc(item.id)}}" #hi alt="" (error)="hi.src='assets/img/u54.png'">
+    </div>
+    <div class="h-cont">
+      <p class="h-title">{{item.title}}</p>
+      <p class="h-name">{{item.cname}}（{{item.ename}}）</p>
+    </div>
+  </div>
+</div>
+<div class="bottom-space" *ngIf="isOver">-END-</div>
